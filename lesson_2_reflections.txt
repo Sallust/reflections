@@ -1,0 +1,5 @@
+?What happens when you initialize a repository? Why do you need to do it?
+
+You're creating a secret .git file setting the stage for files to be tracked through commits
+
+To start the git process and initialize .git folder so as to later make commits
