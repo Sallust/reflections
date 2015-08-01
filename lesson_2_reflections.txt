@@ -3,3 +3,23 @@
 You're creating a secret .git file setting the stage for files to be tracked through commits
 
 To start the git process and initialize .git folder so as to later make commits
+
+?How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is an in between space where a file or group of files live before getting packaged into one commit
+
+The working directory is just the home folder you're working in.
+The repository is where the versions will be saved.
+
+Bonus Reflection: git diff compares staging area to working directory. Since staging area is initialized as a copy of master, the yield of git diff are changes not reflected in master or pending commits aka staging area
+
+**Staging Area is Simply a copy of the most recent commit until changes have been added to it.**
+
+?How can you use the staging area to make sure you have one commit per logical change?
+
+I feel the better questions is how do you use "git diff w/ no argument" and "git diff --staged" to only commit one logical change.
+
+using both makes you aware of uncommitted changes.
+
+The staging area itself is crucial for "staging" the changes as you intend. e.g. you may have made 2 changes, but given their relation, want to commit them separately.
+
