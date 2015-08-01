@@ -26,3 +26,18 @@ git log gives you a log of what commits have been made and git diff gives you th
 ?How might using version control make you more confident to make changes that could break something?
 
 Even though I'm making changes, it's in a branch so it's not really messing around with the master file that I already have.
+
+don't use hard reset ever-reflection
+
+I only lost a line or so from this text file, but let this be a lesson that using hard reset --hard is just a bad idea.
+I'm not even sure why they taught it to us.
+e.g. I was "100%" sure the most updated vs of this file was commited so after accidently adding a lesson 2 reflection to this file, I --hard reset.
+Turns out I HAD added lesson 1 reflections or maybe even a lesson 2 reflection to the lesson 1 file and didn't commit.
+
+One more time
+
+NEVER USE git reset --hard.... EVER... in life
+
+For the record, i think I had written something about how the git system is clearly intimidating, but there's obviously a vital purpose it serves.
+
+Also, be wary changes won't be picked up unless the file has been SAVED. Git's great, but it's not psychic.
