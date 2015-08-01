@@ -23,3 +23,7 @@ using both makes you aware of uncommitted changes.
 
 The staging area itself is crucial for "staging" the changes as you intend. e.g. you may have made 2 changes, but given their relation, want to commit them separately.
 
+?What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When you're trying out some new crazy shit but don't want to fuck with what's already working.
+You're creating a parallel version like an easy-mode or Spanish language version
