@@ -27,3 +27,21 @@ The staging area itself is crucial for "staging" the changes as you intend. e.g.
 
 When you're trying out some new crazy shit but don't want to fuck with what's already working.
 You're creating a parallel version like an easy-mode or Spanish language version
+
+Branch ideas: new feature, bug fix, development branch, unique feature branch. Things you fully expect might break but you want to share them.
+
+Keep master branch as prodcution quality branch for sharing purposes.
+
+How do the diagrams help you visualize the branch structure?
+
+Since a branch is by definition non-linear, a visualizaion is key for understanding relationships
+
+?What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+It compiles the commits aka changes of both into one branch. Since the merge has 2 parents, you can still trace back the commit log and nothing is lost.
+
+?What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+pros- you don't get weird merges that don't make sense, hand pick changes
+cons- seems like it'd be a bitch when the changes have been extensive
+going through the file and making the changes seems scary but that's probably because I don't really know java yet
