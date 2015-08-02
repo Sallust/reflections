@@ -22,4 +22,11 @@
 
   - in the class example, I would have been able to contemplate "sarah's" deletion of cumin from the recipe. Obviously this is a crime, so I will be revoking sarah's ability to collaborate.
 
+?How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+ - I think this is supposed to be the "aha moment" reflection
+ - it would be difficult to gracefully communicate (w/ line by line comments) to another person
+ - hypothetically, if I used google docs to collaborate, it would be easier mostly due to familiarity
+ - however, there's not really a "hey come look at my work" function so comments like "here's a typo" would become part of the clutter
+
 
