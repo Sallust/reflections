@@ -16,3 +16,10 @@
 
  - branch vs. fork: similar concepts but you make branches but you take forks?
 
+?What is the benefit of having a copy of the last known state of the remote stored locally?
+
+ - by fetching it you are then able to review differences collaborators have made
+
+  - in the class example, I would have been able to contemplate "sarah's" deletion of cumin from the recipe. Obviously this is a crime, so I will be revoking sarah's ability to collaborate.
+
+
