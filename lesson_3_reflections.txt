@@ -2,3 +2,17 @@
 
  - when you want to share projects w/ classmate and/or the world
  - when you want to be able to access it from different devices
+
+?Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+ - when multiple people are working on files, you wouldn't want files to automatically do anything really out from under you
+
+  when you clone a repository, git automatically sets up the remote to the repository you cloned from
+
+?Describe the differences between forks, clones, and branches. When would you use one instead of another?
+ - fork- when you want to get all up in someone else's code without it screwing their version up
+
+ - clone- pretty boring... a direct  copy. after forking you'll want to clone the forked remote to your device
+
+ - branch vs. fork: similar concepts but you make branches but you take forks?
+
