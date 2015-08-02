@@ -29,4 +29,13 @@
  - hypothetically, if I used google docs to collaborate, it would be easier mostly due to familiarity
  - however, there's not really a "hey come look at my work" function so comments like "here's a typo" would become part of the clutter
 
+Use pull requests... don't be rude!
+
+?When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+ - by definition it seems, a pull request is a change you're uncertain about and want feedback on so it would make sense not to have these commits directly on the master
+  - also it seems a natural progression to start a branch and then delete it once merged
+  - if you don't make a branch, it seems you could end up messing up the master
+
+
 
