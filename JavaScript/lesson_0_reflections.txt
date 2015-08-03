@@ -1,0 +1,20 @@
+Since I liked reflections so much in the GitHub course, I've decided to continue the trend.
+I mean... they did like... like all these studies so it must work.
+Unlike the ridiculous, overwrought concept map, reflecting seems like a valuable learning tool.
+So here goes!
+
+?What do you think of the course so far?
+ - I'm torn between
+ 	- being offended that HTML and CSS are described as "really easy" since it took me a few weeks to master it and
+ 	- realizing they are actually pretty easy and I managed to over-complicate them
+ - I'm leaning toward the latter. I should be careful not to byzantize (that's totally a word) the process
+
+?First problem set?
+ - painfully easy. Shameful that they even reference the Intro to Comp Sci course which uses problem sets masterfully
+
+?How could this be better than just using HTML/CSS?
+ - Would be easier to update and make changes to content via javascript vs. going into HTML each time.
+ - This is a nebulous concept currently, but I immediately see the potential of using JQueary Selectors
+ - I look forward to learning how to spell queery correctly at a greater than 50% success rate
+
+
