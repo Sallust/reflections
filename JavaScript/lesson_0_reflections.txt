@@ -17,4 +17,8 @@ So here goes!
  - This is a nebulous concept currently, but I immediately see the potential of using JQueary Selectors
  - I look forward to learning how to spell queery correctly at a greater than 50% success rate
 
+?How nifty is it that it kinda looks like Python?!?
+ - Very!! .append() seems pretty much identical. I look forward to forgetting to place a semi-colon after it often
+
+
 

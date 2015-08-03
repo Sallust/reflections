@@ -1,0 +1,8 @@
+?What do you think about var function?
+ - Thank god for some f'in variables. It's odd how much I missed having variables while using HTML & CSS
+
+
+?What do you think about [string].replace([old],[new]) function?
+ - Seems OK. I'm enjoying how the syntax seems very similar to python
+ - I see it only changes the first instance of [old]
+
