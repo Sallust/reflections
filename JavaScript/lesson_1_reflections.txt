@@ -6,3 +6,25 @@
  - Seems OK. I'm enjoying how the syntax seems very similar to python
  - I see it only changes the first instance of [old]
 
+?How do you feel about this learning set-up?
+ - I might be overdoing it between the reflections and the 2 different google docs (1 for code, 1 for any links)
+ - my hope is that now, I won't have to re-watch any videos.
+ - If that comes to be true, I think it will be worth it. Re-watching the HTML courses again was pretty painful.
+
+?How did you get "audacity" to "Udacity" using js?
+ - sure would have been nice if they mentioned concatenation and [] are the same as Python
+
+?Truthy vs Falsy? Thoughts?
+ - Similar to python, seems powerful enough.
+  - I think it's weird we're learning this before if statements, though.
+
+?Arrays?
+ - So these are just lists right?
+ - manipulating them in python seemed more intuitive
+ - array.pop() is just a cluster... it returns the last value while simultaneously removing it
+  - Manipulating strings & arrays seems similar to python.
+
+?Objects?
+ - These just seem unwieldy and useless.
+ - I hope their value becomes more apparent as the course progresses
+ - I guess I do like being able to store a lot of data
