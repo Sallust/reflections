@@ -24,7 +24,8 @@ var string = "apple"
 string.replace(old,new)	//
 string.slice(1,[end]) // "pple"
 string.split(separator) // yields array of str separated by separator
-
+string.toUpperCase()
+string.toLowerCase()
 
 var udacityizer = function(s) { 	//takes as input a string like audacity
 	s = s.slice(1)					//returns "udacity"
@@ -45,5 +46,64 @@ array.pop() // would remove the recently added pineapple
 //ALSO returns "pineapple"
 array.join(separator) // creates string from array elements separated by separator
 
+var bio = {
+    "name" : "Danny",
+    "age" : 32,
+    "skills" : skills
+}
+
+bio.city = "Washington DC"; //declaring the object bio and adding new property
+bio.email = "daniyom@gmail.com";
+//OR
+bio["city"] = "Washington DC"; //alternate syntax for declaring and adding properties
+bio["email"] = "daniyom@gmail.com"
+
+// JSON
+
+var family = [{
+    "name" : "Jason",
+    "age" : "24",
+    "gender" : "male"
+},
+{
+    "name" : "Kyle",
+    "age" : "21",
+    "gender" : "male"
+}];
+
+document.write(family[1].name); // Output: Kyle
+
+var family = {
+    "jason" : {
+        "name" : "Jason Lengstorf",
+        "age" : "24",
+        "gender" : "male"
+    },
+    "kyle" : {
+        "name" : "Kyle Lengstorf",
+        "age" : "21",
+        "gender" : "male"
+    }
+}
+
+document.write(family.jason.name); // Output: Jason Lengstorf
+document.write(family.kyle.age); // Output: 21
 
 
+//Their JSON using arrays
+var education = {
+    "schools": [
+    {
+        "name": "Harvard University",
+        "city": "Cambridge, MA",
+        "degree": "BA",
+        "major": "Economics"
+    },
+    {
+        "name": "University of California Berkeley",
+        "city": "Berkeley, CA",
+        "degree": "coursework",
+        "major": "Accounting"
+    }
+    ]
+}

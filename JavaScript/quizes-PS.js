@@ -35,3 +35,51 @@ function nameChanger(oldName) {
     finalName = names.join(" ");
     return finalName;
 }
+
+//Create Bio Object
+var bio = {
+	"name" : "Danny",
+	"role" : "Front-End Ninja in Training",
+	"contacts" : {
+		"mobile" : "240-476-7892",
+		"email": email,
+		"github" : "Sallust",
+		"twitter" : "@SallustV",
+		"location" : "Washington DC"
+	},
+	"welcome" : "Welcome to the awesomness that is my resume",
+	"pictureURL" : "images/me.jpg",
+	"skills" : skills
+ };
+
+ // More work with object syntax
+var work = {};
+work.currentjob ="being full-time fabulous"; //dot notation
+work.employer = "Best boss in the world";
+work.yearsworked = 4;
+work.city = "Washington DC";
+
+var education = {};
+education["school"] = "Harvard University";
+education["years"] = "2000-2005";
+education["city"] = "Cambridge, MA"
+
+$("#main").append(work["currentjob"]);   //N.B. that properties are being called using alternate notation
+
+$("#main").append(education.school);
+
+//JSON assignment
+var education = {
+	"Harvard" : {
+		"name" : "Harvard University",
+		"city" : "Cambridge, MA",
+		"major" : "Economics",
+		"years" : "2000-2005"
+	},
+	"UCB" : {
+		"name" : "University of California, Berkeley",
+		"city" : "San Francisco, CA",
+		"major" : "Accounting",
+		"years" : "Summer 2004"
+	}
+}

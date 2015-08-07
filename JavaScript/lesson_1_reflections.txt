@@ -28,3 +28,28 @@
  - These just seem unwieldy and useless.
  - I hope their value becomes more apparent as the course progresses
  - I guess I do like being able to store a lot of data
+
+?How are objects and variables different?
+ - an object IS a variable?
+ - declaring object properties is distinct from creating a new variable
+
+?What is object declaration?
+ - generating a new key or property to an object. This can be done via initial {} notation, dot notation, or [] notation
+ - Seems like a lot. Seems [] would be useful for using more chars
+ - pretty cool that you can initialize as one and call it via the other
+
+ ?Why is JSON Linting important?
+  - Sublime won't catch errors
+  - JSON errors would seem to abort the whole script... which is kind of annoying
+
+
+?Why is JSON important?
+ - capability to store tons of data
+ - using JSONP you can cross domain barriers...
+ -so you can use some combo of AJAX and jquery  which I guess sounds pretty cool,
+ - but I'm really not sure I have a clue what it means
+
+?Closing Thoughts?
+ - Seems restrictive in the way I'm having to save the data, but hopefully that's for the sake of ease of data manipulation later
+ - In having to compile a list of completed courses, I realized I have taken a lot and should take some consolation in getting through them all :-p
+ - In compiling this list, I realized I should be reading the initial course descriptions to give me a better idea of how the course will be organized, what I will learn, and possibly where the meat/most time-consuming part of the course will be.
