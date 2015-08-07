@@ -37,6 +37,9 @@
  - generating a new key or property to an object. This can be done via initial {} notation, dot notation, or [] notation
  - Seems like a lot. Seems [] would be useful for using more chars
  - pretty cool that you can initialize as one and call it via the other
+ -**added reflection- [] notation is basically indestructible
+ - dot notation fails when anything but letters is introduced (numbers may follow)
+ - some chars also ok like $
 
  ?Why is JSON Linting important?
   - Sublime won't catch errors
@@ -58,3 +61,6 @@
  - N.B. If you don't remember to save, then the git commit is completely pointless.
  - Think I should slow down the commits perhaps and confirm the new differences via git diff.
  - AGAIN... REMEMBER TO SAVE BEFORE COMMITS!!! or at least use git diff to see wtf you're actually committing
+
+"Spaces are generally bad form in programming."
+ - Oh... that's good to know.

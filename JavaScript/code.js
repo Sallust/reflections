@@ -122,3 +122,12 @@ education["city"] = "Cambridge, MA"
 $("#main").append(work["currentjob"]);
 $("#main").append(education.school);
 
+// Using console to pull element by class-name
+document.getElementsByClassName("reading-area")[0]
+
+document.getElementById("education");
+
+//Using replace w/ a global tag to get rid of evil
+newHTML = _html.replace(/</g,"&lt").replace(/>/g,"&gt");
+//Using document and style to change background to black
+document.getElementById('header').style.backgroundColor = "black"

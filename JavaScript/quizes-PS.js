@@ -124,3 +124,25 @@ $("#header").append(formattedWelcome);
 $("#header").append(formattedSkills);
 
 $("#main").append(bio.name);
+
+//Removing "<" console.log(charEscape(html));
+var html = '<script src="http://hackyourwebsite.com/eviljavascript.js"></script>';
+
+var charEscape = function(_html) {
+    var newHTML = _html;
+    newHTML = _html.replace(/</g,"&lt").replace(/>/g,"&gt");
+
+    return newHTML;
+};
+//Can you access property using DOT, or Bracket notation
+var weirdObject = {
+    "property": true, true,
+    "property1": true,true
+    "property-2": false, true
+    "property 3": false, true
+    "property$": true, true
+    " property": false, true
+    "property()": false,true
+    "property[]": false,true
+    "8property": false, true
+};
