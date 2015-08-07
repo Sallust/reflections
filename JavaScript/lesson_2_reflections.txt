@@ -1,0 +1,7 @@
+?if statements? awesome, right?
+ - finally we get some power
+
+?linking methods? also pretty awesome, right?
+ -making huge strings of code actually seems better than python
+ - writing this code in Python I think would have been a lot more complicated?
+ - $("#skills").append(HTMLskills.replace("%data%",bio.skills.join(" ")));
