@@ -71,7 +71,7 @@ var family = [{
     "gender" : "male"
 }];
 
-document.write(family[1].name); // Output: Kyle
+document.write(family[1].name); //** Output**: Kyle
 
 var family = {
     "jason" : {
@@ -86,24 +86,39 @@ var family = {
     }
 }
 
-document.write(family.jason.name); // Output: Jason Lengstorf
-document.write(family.kyle.age); // Output: 21
+document.write(family.jason.name); // **Output: Jason Lengstorf
+document.write(family.kyle.age); // **Output: 21
 
 
-//Their JSON using arrays
+//Their JSON using arrays. The array seems unnecessary
 var education = {
     "schools": [
-    {
-        "name": "Harvard University",
-        "city": "Cambridge, MA",
-        "degree": "BA",
-        "major": "Economics"
-    },
-    {
-        "name": "University of California Berkeley",
-        "city": "Berkeley, CA",
-        "degree": "coursework",
-        "major": "Accounting"
-    }
+        {
+            "name": "Harvard University",
+            "city": "Cambridge, MA",
+            "degree": "BA",
+            "major": "Economics"
+        },
+        {
+            "name": "University of California Berkeley",
+            "city": "Berkeley, CA",
+            "degree": "coursework",
+            "major": "Accounting"
+        }
     ]
 }
+// More work with object syntax. Dot vs literal notation.
+var work = {};
+work.currentjob ="being full-time fabulous"; //dot notation
+work.employer = "Best boss in the world";
+work.yearsworked = 4;
+work.city = "Washington DC";
+
+var education = {};
+education["school"] = "Harvard University";
+education["years"] = "2000-2005";
+education["city"] = "Cambridge, MA"
+
+$("#main").append(work["currentjob"]);
+$("#main").append(education.school);
+

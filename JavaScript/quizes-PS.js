@@ -83,3 +83,44 @@ var education = {
 		"years" : "Summer 2004"
 	}
 }
+
+//Code from resumeBuilder.js first lesson... mostly tests and examples
+var name = "Danny Haile";
+var role = "Front-End Web Developer";
+
+var awesomeThoughts = "I am pretty awesome! How awesome you wonder?";
+
+console.log(awesomeThoughts);
+
+console.log("Mind Blown!");
+
+var email = "daniyom@gmail.com";
+
+var funThoughts = awesomeThoughts.replace("awesome","fuckin awesome");
+
+//Using Replace 'function
+var formattedName = HTMLheaderName.replace("%data%",name);
+
+var formattedRole = HTMLheaderRole.replace("%data%",role);
+
+$("#header").prepend(formattedRole);
+
+$("#header").prepend(formattedName);
+
+var formattedContact = HTMLcontactGeneric.replace("%contact%",bio.contact);
+
+var formattedWelcome = HTMLwelcomeMsg.replace("%data%",bio.welcome);
+
+var formattedPicture = HTMLbioPic.replace("%data%",bio.pictureURL);
+
+var formattedSkills = HTMLskills.replace("%data%",bio.skills);
+
+$("#header").append(formattedPicture);
+
+$("#topContacts").append(formattedContact);
+
+$("#header").append(formattedWelcome);
+
+$("#header").append(formattedSkills);
+
+$("#main").append(bio.name);

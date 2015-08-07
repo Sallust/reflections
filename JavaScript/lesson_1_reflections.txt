@@ -53,3 +53,8 @@
  - Seems restrictive in the way I'm having to save the data, but hopefully that's for the sake of ease of data manipulation later
  - In having to compile a list of completed courses, I realized I have taken a lot and should take some consolation in getting through them all :-p
  - In compiling this list, I realized I should be reading the initial course descriptions to give me a better idea of how the course will be organized, what I will learn, and possibly where the meat/most time-consuming part of the course will be.
+
+?Last Reflection on Saving & Git?
+ - N.B. If you don't remember to save, then the git commit is completely pointless.
+ - Think I should slow down the commits perhaps and confirm the new differences via git diff.
+ - AGAIN... REMEMBER TO SAVE BEFORE COMMITS!!! or at least use git diff to see wtf you're actually committing
