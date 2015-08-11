@@ -5,3 +5,21 @@
  -making huge strings of code actually seems better than python
  - writing this code in Python I think would have been a lot more complicated?
  - $("#skills").append(HTMLskills.replace("%data%",bio.skills.join(" ")));
+
+?for loops and while loops?
+ - seem fine and comporable to python, BUT, it's a little annoying that the item in a for in loop refers to the index and not the actualy item
+
+?How fun was it trying to figure out how to reference the correct JSON element?
+ - It wasn't.
+ I'm still unsure why there's a jobs array within the work object.
+ - At some point I'd like to play around and see if it gets harder to reference NOT using their format
+
+? Collecting Click Locations?
+ - This exercise seemed a little random and weird.
+ - Hopefully they run through it further
+ - Seemed like an illogical step
+ -However, let this be a lesson that you can always find the answer on stack overflow :-)
+
+?Internationalize Name?
+ - Thank god for message boards!!
+ - Per discussion w/ Nuatu, really should be using these more often

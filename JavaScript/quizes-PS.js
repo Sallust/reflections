@@ -146,3 +146,26 @@ var weirdObject = {
     "property[]": false,true
     "8property": false, true
 };
+
+// create a function that takes as input
+//the work object and returns an array of locations
+//my answer
+function locationizer(workObj) {
+    var locationArray = [];
+    for (job in workObj.jobs) {
+        locationArray.push(workObj.jobs[job].location);
+    }
+    return locationArray
+}
+//Their answer. Of note, the names are really similar. Also, they created a variable newLocation
+//which makes code easier to read
+function locationizer(work_obj) {
+	var locationArray = [];
+
+	for (job in work_obj.jobs) {
+		var newLocation = work_obj.jobs[job].location;
+		locationArray.push(newLocation);
+	}
+
+	return locationArray
+}

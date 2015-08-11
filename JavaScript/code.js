@@ -131,3 +131,41 @@ document.getElementById("education");
 newHTML = _html.replace(/</g,"&lt").replace(/>/g,"&gt");
 //Using document and style to change background to black
 document.getElementById('header').style.backgroundColor = "black"
+
+ //first If statement
+ if (bio.skills) {
+    $("#header").append(HTMLskillsStart);
+}
+
+//THEIR answer
+if (bio.skills.length > 0)
+
+//WHILE loops
+
+var jill = {};
+jill.job = "cook";
+
+var makeMeals = function() {
+    console.log("Made a delicious Meal");
+}
+
+var meals = 0;
+while(jill.job === "cook") {
+    makeMeals();
+    meals = meals + 1;
+    if(meals === 10) {
+        jill.job = "very full";
+    }
+}
+
+//FOR loops
+for (var i=0; i<9; i++){
+    console.log(i);
+}
+
+//FOR IN loops
+var countries = ["Germany", "Argentina", "United States", "South Africa"];
+
+for (country in countries) {
+console.log(countries[country]);
+}
