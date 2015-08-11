@@ -1,0 +1,82 @@
+?What did you learn from this webcast?
+ - new strategies and habits
+ - what a FE job actually looks like
+ - what next steps to take after my FE degree
+
+?How did this Webcast make you feel about your future job prospects?
+ - generally assuaged fear of not being prepared enough to start a job.
+ - by somewhat outlining next steps after my FE degree
+ - also: EVERYTHING ON WEB IS EITHER HTML, CSS, or JS
+ - any sort of framework is just a manipulations of the above 3
+ - so there's something to be said for getting really good at those 3
+
+
+?How will you apply what you learned to when you're working as a FE-intern?
+ - There's a time to explore crazy new ideas and concepts
+ - This is NOT the case when you have a deadline.
+ - I think this is huge for me as I constantly fear there being some better solution out there
+ - If you can solve it with what you know and it's well supported that very well may be the best solution
+ - Some newfangled framework might be nice... but not when you get woken up at 3 in the morning because you're the only one who knows how it works.
+
+
+?What surprised you the most?
+ - simply divided IT world into Web Dev and Software Field
+
+?What changes are you going to start making now?
+ - Start reading hackerNews and WebDesignerNews
+ - hackerNews more tech, bus & comp sci
+ - hackerNews good place to stay on top of developing trends
+ - not very Tutorial-y
+
+?Any good strategic takeaways?
+ - Taking popularity of a framework or new something is fine
+ - It speaks to support
+ - also make sure to check that documentation exists
+ - see if Stack Overflow had a lot of questions about it.
+ - when diving into a new Code Base, don't feel anxious to understand EVERY bit of it
+  - It's sufficient just to understand just the parts that relate to your project
+  - Don't be afraid to ask questions: sometimes a human can answer your question a lot faster than google can
+
+?Good FE principles?
+ - Design - how to pull in new Users
+ - Content - how to keep Users
+ - Don't interrupt the flow of the User
+
+
+?Why will Adobe Fail?
+ - It broke rule 3 above: interrupting  the flow of the user
+ - you can't copy paste in adobe
+ - you can't tab through
+ - generally it's a big blob on the page that you can't interact with
+ - it's a great design, but a poor User experience is why it will fail
+
+
+?How to get Design inspiration?
+ - Just go to other websites!!!
+ - Check out the library being imported!!
+ - explore WHAT makes a design bad or good
+ - Things like parallax scrolling are big now.
+ - I think the rtve website relies heavily on those (go spain!
+ )
+
+?New Advanced WebDev Nanodegree components?
+ - Angular JS: a collaboration with google
+ - Polymer
+ - Gulp or Grunt work
+ -ES 6 maybe (whatever that is)
+
+?Other courses?
+ - Design of Everyday Things
+ - also a book
+ - Donald Norman
+
+? What are steps you could take now?
+ - putting up any sort of work in a public space
+ - blogging
+ - sharing something
+
+? Next steps?
+ - create a ToDo application
+ - 2 way data binding
+ - take existing portfolio Resume and Map and recreate using one of the newer frameworks
+ - Learn Angular and Google Ap Engine
