@@ -169,3 +169,33 @@ function locationizer(work_obj) {
 
 	return locationArray
 }
+//internationalize Name Quiz... again but w/ a cleaner answer
+function inName() {
+	names=name.split(" ");
+	names[1] = names[1].toUpperCase;
+	names[0] = names[0][0].toUpperCase() + names[0].slice(1).toLowerCase();
+	return names[0] + " " + names[1]
+}
+
+//Encapsulating Functions
+projects.display = function() {
+	for (project in projects.project) {
+		$("#projects").append(HTMLprojectStart);
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.project[project].title);
+		var formattedDate = HTMLprojectDates.replace("%data%", projects.project[project].dates);
+		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.project[project].description);
+		var formattedImages = ""
+		for (image in projects.project[project].images) {
+			var formattedImage = HTMLprojectImage.replace("%data%", projects.project[project].images[image]);
+			formattedImages = formattedImages + formattedImage;
+		}
+		$(".project-entry:last").append(formattedTitle+formattedDate+formattedDescription+formattedImages);
+	}
+}
+
+//New syntax
+$(document).click(function(loc) {
+	logClicks(loc.pageX, loc.pageY);  // It's taking as it's paramater an
+     //Anonymous function
+
+});

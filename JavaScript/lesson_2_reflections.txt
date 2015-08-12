@@ -23,3 +23,20 @@
 ?Internationalize Name?
  - Thank god for message boards!!
  - Per discussion w/ Nuatu, really should be using these more often
+
+?Encapsulation?
+ - I like the idea of neat code
+ - I think I'll have to see an example of fully encapsulized code to fully grasp the beauty of it
+
+?Anonymous Functions?
+ - I'm honestly not 100% sure I fully grasp the idea, but I think w/ time it will become more clear
+
+?Final Thoughts?
+ - JS seems alright
+  - The google map seems like it was just magically handed to us
+  - So I'll have to dig into code to better understand it
+  - I hope I don't get too caught up in personalizing the website :-p
+  - I'm ready to jump into the project and start making the JS code my own...
+  -After I look forward to making it not look super boring
+
+

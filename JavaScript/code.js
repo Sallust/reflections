@@ -169,3 +169,38 @@ var countries = ["Germany", "Argentina", "United States", "South Africa"];
 for (country in countries) {
 console.log(countries[country]);
 }
+
+//Functions
+var myFunc = function(param1,param2) {
+    //code
+}
+//Equivalent to
+function myFunc(param1,param2) {
+    //code
+}
+
+//JQuery Event object
+$(document).click(function(loc) {
+// code goes here
+ });
+loc //a JQuery event object containing info about the click event
+
+//JQuery Event Handler - meaining it runs some code at click
+$(document).click() // It's taking as it's paramater an
+     //Anonymous function
+
+// using Return statements, also more work w/ for in loops
+function locationizer(work_obj) {
+    var locationArray = [];
+    for (job in work_obj.jobs) {
+        var newLocation = work_obj.jobs[job].location;
+        locationArray.push(newLocation);
+    }
+    return locationArray
+}
+
+//Encapsulation & objects
+projects.display = function() {
+    //code
+}
+
