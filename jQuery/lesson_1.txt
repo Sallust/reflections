@@ -1,0 +1,26 @@
+60 % of top 100,000 websites use it
+why?
+
+ - easy DOM manipulation
+ - adding elements with just Java is really difficult
+ - let's you focus on UX versus browswer compatibility
+
+
+? JQuery is Just a JavaScript Library ?
+ - JS is really powerful
+ - Jquery is one of 1000s of JS libraries. That's crazy!!!
+
+? jQuery is JUST a function object?
+ - Craziness
+
+?How awesome is jQuery?
+ -pretty f'in awesome
+ - it's an elegant quick way to call parts of the DOM and manipulate the shit out of them
+ -
+
+?Documentation, awesome right?
+ - Um... about that.
+ - Documentation still is coming off as incredibly intimidating.
+ - I really need to get over it.
+ - Initially the HTML and CSS and bootstrap documentation were also intimidating so I'm hoping the same will happen for JS
+ - However, I don't want this to be an excuse to put off going through the documentation my reasoning being "one day I'm going to open the documentation and it will all magically make perfect sense to me"

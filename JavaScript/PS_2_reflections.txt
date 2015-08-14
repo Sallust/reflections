@@ -1,0 +1,30 @@
+?What is scope?
+ - defines from where a variable will be accessible
+ - outside of a function, a variable will have global scope
+ - inside of a function, a variable will have local scope
+
+?How will this affect how you can write code?
+ - will have to be very careful when using "var" w/in functions
+  - actually, it should be clear hopefully whether or not I want to create a new local variable or access/change a global one
+
+
+?What is block level scope?
+ - w/in an "if" block
+
+
+?How do if statements relate to scope?
+ - they do not have their own scope.
+ - There is no way to create a local variable w/in an if statement
+
+ ?Is there a difference in Function Declaration Syntax?
+  - hell yes there is.
+  - I'm not sure I understand how the computer does it, but using function myFunc magically sets function for everything even before
+  - using var myFunc only introduces an undefined variable to be later defined when line is reached
+
+?Overcoming new syntax barriers?
+ - Have GOT to get stronger at understanding documentation
+ - in last problem we used the infoWindow class? open to create an info window above pin points on event
+ - overall, pretty cool
+
+?Using JS to do programy things?
+ - This is cool but it makes me scared that I might actually like a more back-end degree...

@@ -199,3 +199,176 @@ $(document).click(function(loc) {
      //Anonymous function
 
 });
+
+//
+//   Problem Set 2
+//
+
+
+//Working with Scope: Local vs Global
+var outsideExample = "First string";
+function example() {
+    var outsideExample = "Second string";
+}
+example();
+console.log(outsideExample); // "First string"
+
+var outsideExample = "First string";
+function example() {
+    outsideExample = "Second string";
+}
+example();
+console.log(outsideExample); // "Second string"
+
+// Block Level Scope
+var outsideExample = "First string";
+if (true) {
+    var outsideExample = "Second string";
+    console.log(outsideExample); //Second String
+}
+console.log(outsideExample); //Second String
+
+//Function Declaration syntax
+example1();
+function example1() {
+    console.log("Ran the example");
+} //WIN!
+
+example2();
+var example2 = function() {
+    console.log("Ran the example");
+} //FAIL :(
+
+
+//Adding infoWindow to map on resume
+google.maps.event.addListener(marker, 'click', function() {
+      infoWindow.open(map, marker); //This is the part we had to find by reading documentation
+    });
+
+
+//
+// Bonus Questions
+//
+function getRelationship(x, y) {
+    if (isNaN(x) && isNaN(y)) {
+        return "Can't compare relationships because "+ x + " and " + y + " are not numbers";
+    }
+    else if (isNaN(x)) {
+        return "Can't compare relationships because " + x +" is not a number";
+    }
+    else if (isNan(y)) {
+        return "Can't compare relationships because " + y +" is not a number";
+    }
+    else if (x < y) {
+        return "<";
+    }
+    else if (x > y) {
+        return ">";
+    }
+    else if (x === y) {
+        return "=";
+    }
+};
+
+var moonWalkers = [
+  "Neil Armstrong",
+  "Buzz Aldrin",
+  "Pete Conrad",
+  "Alan Bean",
+  "Alan Shepard",
+  "Edgar Mitchell",
+  "David Scott",
+  "James Irwin",
+  "John Young",
+  "Charles Duke",
+  "Eugene Cernan",
+  "Harrison Schmitt"
+];
+
+
+function alphabetizer(namesB) {
+    standardizedNames = standardize(namesB);
+    standardizedNames = standardizedNames.sort();
+  //  while (isOrdered(standardizedNames) === false) {
+     //   for (index in namesB) {
+       //     compare(namesB,index);
+
+   //     }
+
+
+
+
+
+
+
+
+  //  }
+    return standardizedNames;
+
+}
+
+// Try logging your results to test your code!
+console.log(alphabetizer(moonWalkers));
+//var testArray = ["cat","arm"];
+
+
+function compare(myArray, a) {
+    holdA = myArray[a];
+    if (myArray[a]>myArray[a+1]) {
+        myArray[a] = myArray[a+1];
+        myArray[a+1] = holdA;
+    }
+    else {
+        myArray[a] = myArray[a];
+    }
+
+}
+var testing = ['Conrad, Pete', 'Bean, Alan','Shepard, Alan' ];
+compare(testing,0);
+//console.log(testing);
+//    myArray[index0] = (myArray[index_0]>myArray[index_1]) ?
+ //   if (myArray[index_0]>myArray[index_1]) {
+
+
+ //   if (myArray[index_0]<myArray[index_1]) {
+ //       return
+//    }
+ //   else {
+//        return [myArray[0], myArray[1]];
+ // }
+//}
+
+//function swap(a,b) {
+   // if (a<b) {
+      //  return
+
+function standardize(nameArray) {
+    newArray = [];
+    for (names in nameArray) {
+        orderedName = nameArray[names].split(" ").reverse().join(", ");
+        newArray.push(orderedName);
+    }
+
+    return newArray;
+}
+
+function isOrdered(myArray) {
+    length = myArray.length;
+    for (var i = 0; i < length; i++) {
+        if (myArray[i]>myArray[i+1]) {
+            return false;
+            break;
+        }
+
+     }
+    return true;
+};
+
+var testArray3 = [7,3,1];
+
+//compare(testArray3,1);
+
+ //console.log(testArray3);
+
+
+
