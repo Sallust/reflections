@@ -4,6 +4,7 @@ why?
  - easy DOM manipulation
  - adding elements with just Java is really difficult
  - let's you focus on UX versus browswer compatibility
+ -quick selection
 
 
 ? JQuery is Just a JavaScript Library ?
@@ -24,3 +25,43 @@ why?
  - I really need to get over it.
  - Initially the HTML and CSS and bootstrap documentation were also intimidating so I'm hoping the same will happen for JS
  - However, I don't want this to be an excuse to put off going through the documentation my reasoning being "one day I'm going to open the documentation and it will all magically make perfect sense to me"
+
+?Taking a class and giving it to another class?
+ - My solution was to id the element I wanted; and call and operate on it in one line
+ -Their solution was to set the selector in one variable and then manipulate it in another line
+ -I'm not sure that one is better than the other?
+
+?Changing Attributes?
+ - Pretty cool
+ - My mistake was that I was trying to select the element the link lived in, but the goal was to select the <a> element and add an attribute to it
+
+
+?:first versus ".first()"
+ -not sure what the advantages are to either.
+  - seems like one of those things where they operate differently in unique situations.
+  - Probably better off just creating an id?
+
+?Changing title using jQuery?
+  -This was pretty f'in cool.
+   - It's clear how this could be used to create a dynamically changing website per the user
+   - Basically used an event listener to execute when the <input> element changes
+   - Then used jQuery .text method to set new value of <input> to the title selector
+
+?Adding whole new DOM elements?
+ - Still seems like you end up writing HTML in a js file.
+ - still this is obviously really powerful and cool at the same time.
+
+?Using .each?
+ - able to run a function at each element match... pretty cool
+  - I'm hoping that the differences between their solution and mine is that he's using spagattified code to make the incremental steps clear
+
+?How does where the script is run affect output?
+ - If the script links to the head of the page, the DOM hasn't rendered and you can't really manipulate it
+ - If you place the script at the end of the page, it could slow down how the page renders
+ - On solution is to call a function within the jQuery element like $(function)
+ - for instance, in my resume builder project the script is linked at end of page
+
+?Overall Reflections?
+ - Nice class. I wish we had worked with event listeners as they seem pretty f'in cool
+ - I will say I do feel much more comfortable with the documentation now
+ - That said, fully understanding event listeners shouldn't be too hard to do now :-)
