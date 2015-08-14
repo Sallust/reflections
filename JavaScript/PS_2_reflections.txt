@@ -28,3 +28,21 @@
 
 ?Using JS to do programy things?
  - This is cool but it makes me scared that I might actually like a more back-end degree...
+
+ -HA! I can't believe I wrote that yesterday.
+ - This was painful, lol.
+
+?Using JS to parse PageInsights data?
+ -It's still stunning to me that in a for loop the variable only refers to the index and not the value
+ -It's really annoying, but I figured it out
+ -I do wish there were a more generic way of sifting through objects kind of like an index
+ -The only hard part was figuring out the above and applying it to solution
+
+?Using JS to total the bytes?
+ - Still not 100% sure why .Numbers() didn't work, but I developed a work around
+ -Can I really not set two variables at a time? That's lame
+ - I'll have to play with this later
+ -Again, can see power of JavaScript. It's OK
+
+
+

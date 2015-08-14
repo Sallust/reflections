@@ -370,5 +370,27 @@ var testArray3 = [7,3,1];
 
  //console.log(testArray3);
 
+// NEXT PROBLEM // NEXT PROBLEM   // NEXT PROBLEM //
+function ruleList(results) {
+    var ruleArray = [];
+    for (var obj in results.formattedResults.ruleResults) {
+        singleRule = results.formattedResults.ruleResults[obj].localizedRuleName;
+        ruleArray.push(singleRule);
+    }
+    return ruleArray;
+    // Your code goes here!
+}
 
+function totalBytes(results) {
+    var bit = 0;
+    var bigBytes = 0;
+    for (data in results.pageStats) {
+        if (data.indexOf("Bytes") > 0) {
+            bit = Number(results.pageStats[data]) ;
+            bigBytes = bigBytes + bit;
+            //console.log(bigBytes)
+        }
+    }
+  	return bigBytes;
+}
 
