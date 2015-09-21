@@ -1,0 +1,98 @@
+? What is lexical Scope? Who cares?
+	-the scope that exists within a variable
+	-matters because var w/in lexical scope are NOT globally accessible
+
+?What variables are available within function?
+	-global, lexical, the actual function variable
+	-
+
+?What difference does var make within scope?
+	- declaring w/o var makes it a global variable
+	- even if this is intentional, readers of code will assume it's a mistake
+	-avoid this!!!
+
+?What about for loops, and if statements?
+	- ONLY function { } create lexical scope!!!
+
+?What is the difference between in-memory scope and lexical scopes?
+	-in-memory scope is the scope created during function calls
+	-if no functions are called, there is no in-memory scope (kind of)
+	-new in-memory scope is created for each time function is called
+
+?What is this?
+	-the shit to the left of the dot during a function invocation
+
+?What are protype type chains?
+	-A way of having an object push property requests back to to a prototype
+	-Allowing multiple objects to have one "parent" prototype which houses common property
+
+?What is the Object Prototype?
+	- a magical object that is the parent of all objects, and what failed lookups from objects got up to
+	- i.e. it is where all shared methods exist
+?What is the Array Prototype?
+	-the object that all arrays delegate to which is itself a child of the object prototype
+
+?What is refactoring?
+	-Finally, I get it!!! It's like your code is the number 81. Re factoring would be setting it to 3^4. And calling 3, 4 times. Since 3 is a number to understand, the code becomes more readable.
+
+?What's the benefit of code reuse?
+	- suppose you want something done to an object, if you have that captured in a function, which is called on the various objects, you would just have to change that helper function to change the effect.
+	- in the example, it makes it a lot easier to add fancy things to the move function
+
+?What is a decorator?
+	- a function takes in an object and then augments it with a property or functionality
+	- Usually an adjective
+
+?What is the benefit and opportunity cost of having move stored in the carlike function instead of a the global variable?
+	- cost: it now has to get called each time
+	- benefit: no longer need 'this' to be called since obj variable is available w/in scope
+
+?What's a class vs a decorator?
+	- A class is a notion of similar objects created by a constructor function.
+
+?	What's defines a Prototypal Classes?
+	1) 	Function creating instances
+	2)	a line generating new instance Object
+	3)	a delegation to prototype obj
+	4)	logic for augmenting obj w/ properties making it unique from rest of class
+
+?What is prototype?
+	-a methods container object that is available on every function
+	-a provided container object for prototype properties to live
+	-It is not special. It's just mildly interesting that jS provided it for us to use instead of a methods object
+	-jk. It also has a convenience property "constructor" which points back to function it came attached to
+
+?Why might the use of prototype lead to confusion?
+	-It can either mean:
+	1) Amy's prototype is Car.prototype meaning
+		Failed lookups from obj 1(Amy) fall through to second obj(Car.prototype)
+	2) Car's prototype is Car.prototype
+		When Car function runs, it creates objects that delegate lookups to car.prototype
+
+?How can you use .constructor?
+	-To see what function created object.
+
+?What is instanceof?
+	-an operand
+	-checks if right operand's prototype object can be found in left operand's prototype chain
+
+?What is the keyword "new" ?
+	-makes it such that the invocation function runs in "Constructor Mode"
+	-does some things you'll need done because you're creating an instance
+	-i.e. initiates a prototype  and returns it
+	-also makes interesting use of "this"
+
+?What's a superclass?
+	-It's like a class that includes other classes
+
+
+?JavaScript doesn't do any copying when you assign one variable or property to be equal to another?
+
+?Why do people conflate constructor function and its prototype function?
+	-because in the past the Object.create didn't exist and so you'd have to do some shoddy delegating to a "new" Car object
+
+
+?Why do you have to name the subclass constructor (van)?
+	- In setting the subclass prototype equal to the superclass prototype, we override the built in constructor function
+	-a lookup of Van.constructor or Amy.constructor yields Car
+	-Setting Van.prototype.constructor = Van fixes this problem;
