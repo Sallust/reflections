@@ -1,0 +1,115 @@
+<canvas id="c" width="500" height="500"></canvas>
+	<script>
+		var c = document.querySelector("#c");
+		var ctx = c.getContext("2d");
+
+		ctx.fillStyle = "blue";
+
+		ctx.fillRect(100, 100, 200, 200);
+		ctx.strokeRect(100, 100, -50, -50);
+		ctx.clearRect(125, 125, 25, 25 );
+
+		ctx.beginPath();
+		ctx.moveTo(10, 10);
+		ctx.lineTo(50, 50);
+		ctx.lineTo(50, 10);
+		ctx.lineTo(10, 10);
+		ctx.fill();
+		ctx.stroke();
+
+		var image = new Image();
+
+		image.onload = function() {
+			console.log("Loaded image");
+			ctx.drawImage(image, 0, 0, c.width, c.height);
+			var savedImage = c.toDataURL();
+			window.open(savedImage);
+		}
+
+		image.src = "dc-lion.jpg"
+
+		c.width = c.width	//Easy way to clear canvas
+		ctx.scale(x,y) //Multiplies x and y value by given factor
+
+		ctx.translate(x,y) //moves all subsequent draw commands x & y pixels
+
+		ctx.rotate(angleRadians) //rotates obj set number of radians about its center
+
+
+		ctx.save();
+ctx.fillStyle = 'blue';
+ctx.translate(10,10);
+ctx.fillRect(0,0,10,10);
+ctx.restore();
+
+
+ctx.rotate(Math.PI/4);
+ctx.translate(50,0);
+ctx.fillStyle = 'green';
+ctx.fillRect(0,0, 10,10);
+
+createImageData // initializes blank obj
+getImageData //retreive or stores
+putImageData
+
+
+
+//Create Hey there meme type writing
+ctx.fill();
+ctx.font = "50px impact";
+ctx.textAlign = "center";
+ctx.lineWidth = 3;
+
+ctx.strokeStyle = "black";
+ctx.strokeText("Hey There", c.width/2, 90);
+ctx.fillStyle = "gainsboro";
+ctx.fillText("Hey There", c.width/2, 90);
+
+//loading Image to put meme on
+var image = new Image();
+
+image.onload = function() {
+	console.log("Loaded image");
+	ctx.drawImage(image, 0, 0, c.width, c.height);
+	var savedImage = c.toDataURL();
+	window.open(savedImage);
+}
+
+	image.src = "dc-lion.jpg"
+
+//awkward square and triangle
+ctx.fillStyle = "blue";
+
+
+ctx.beginPath();
+ctx.moveTo(50, 50);
+ctx.lineTo(150, 50);
+ctx.lineTo(150, 150);
+ctx.lineTo(50, 150);
+ctx.lineTo(50, 50);
+
+ctx.strokeStyle = "#33cc33"
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(75, 75);
+ctx.lineTo(125, 75);
+ctx.lineTo(125, 125);
+
+//converting 10th pixel to green
+function paintGreen(imageData) {
+	var numPixels = imageData.data.length / 4;
+
+	for (var i = 0; i < numPixels; i++) {
+		if (i % 10 === 0) {
+			imageData.data[i * 4 + 1] = 255;
+			imageData.data[i * 4 + 3] = 255;
+		}
+	}
+	ctx.putImageData(imageData, 0, 0);
+}
+
+
+
+
+	</script>

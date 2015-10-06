@@ -1,0 +1,31 @@
+?What is the canvas?
+	-Just the physical space where the drawing will occur
+
+?How does the Canvas coordinate system compare to geometry class?
+	-it does NOT use Cartesian PLanes!!!
+	-Origin is top left, with a coordinate of (0,0)
+	-x axis is same, in that increasing x coordinate moves right
+	-HOWEVER, y is opposite in that increasing y coordinates move DOWN
+
+?Why do we need to set a an event listener for image load?
+	-all images in jS load asynchronously
+	-so we can only work with image once it's finished loading
+	-hence the image.onload
+
+?Why do we need to set up a local host?
+	-Error "Tainted canvases may not be exported"
+	-Bootleg way around this issue is to right click save
+
+?Why does changing height, reset the canvas?
+
+
+?Order of Operations?
+	-Scale, Rotate, Translate
+	-Transformations apply for all subsequent objects until reversed
+
+?What's in the Image Data object?
+	- width, height, data (Uint8Clamped Array)
+	-U = unsigned and thus all positive
+	-int8 means 0-255 number system
+
+How do we
