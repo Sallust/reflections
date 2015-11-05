@@ -1,0 +1,170 @@
+<!Doctype HTML>
+
+<html>
+<head>
+</head>
+
+<body>
+	<canvas id="c" width="500" height="500"></canvas>
+	<script>
+	var c = document.querySelector("#c");
+	var ctx = c.getContext("2d");
+
+
+
+test = function(){
+	console.log("Hi there");
+	return true
+
+}
+
+if (test()){
+	console.log("Result")
+
+}
+var array = ["bob", "sally", "Sue"]
+
+
+var player = new Image();
+var enemy = new Image();
+
+player.onload = function() {
+
+	ctx.drawImage(player, 100, 100);
+	ctx.drawImage(enemy, 14, 100);
+	ctx.drawImage(enemy, 186, 100);
+	ctx.drawImage(enemy, 100, 18);
+	ctx.drawImage(enemy, 100, 165);
+
+
+}
+
+player.src = "char-boy.png";
+enemy.src = "enemy-bug.png"
+
+var Particle = function() {
+	this.scale = 1;
+	this.x = 100;
+	this.y = 100;
+	this.radius = 50;
+	this.radius2 = this.radius * 2.4;
+	this.color = "#000";
+	this.velocityX = 0;
+	this.velocityY = 0;
+	this.scaleSpeed = 0.5;
+	this.m = .5;
+	this.r0 = 50;
+	this.r1 = 120;
+}
+
+
+Particle.prototype.draw = function() {
+	ctx.save();
+    ctx.translate(this.x, this.y);
+    ctx.scale(this.scale, this.scale);
+
+    var rot = Math.PI/2*3;
+    var x = 0;
+    var y = 0;
+    //var step = Math.PI/5;
+
+    ctx.strokeStyle = '#FF0000';
+    ctx.beginPath();
+    //ctx.moveTo(0, -this.radius);
+    for (rot = Math.PI/2*3; rot < 11; rot += Math.PI/5) {
+        x = Math.cos(rot) * this.radius;
+        y = Math.sin(rot) * this.radius;
+        ctx.lineTo(x, y);
+        rot += Math.PI/5;
+
+        x = Math.cos(rot) * this.radius2;
+        y = Math.sin(rot) * this.radius2;
+        ctx.lineTo(x, y);
+        console.log(x,y);
+
+       // console.log(rot)
+    }
+    ctx.lineTo(0, -this.radius);
+    console.log(0, -this.radius)
+
+    ctx.stroke();
+    //ctx.closePath();
+    ctx.restore();
+}
+
+function drawStar(ctx,cx,cy,r0,r1){
+	var rot=Math.PI/2*3,x=cx,y=cy,step=Math.PI/5
+
+	ctx.filleSyle="#000";
+	ctx.beginPath();
+	ctx.moveTo(cx,cy-r0)
+	for(i=0;i<5;i++){
+		x=cx+Math.cos(rot)*r0;
+		y=cy+Math.sin(rot)*r0;
+		ctx.lineTo(x,y)
+		rot+=step
+
+		x=cx+Math.cos(rot)*r1;
+		y=cy+Math.sin(rot)*r1;
+		ctx.lineTo(x,y)
+		rot+=step
+	}
+	ctx.lineTo(cx,cy-r0)
+	ctx.fill();
+	ctx.closePath();
+
+}
+
+var particle = new Particle();
+
+//drawStar(ctx,100,100,50,120);
+particle.draw();
+
+ctx.beginPath();
+		ctx.arc(100, 100,5, 0, Math.PI*2, true);
+		ctx.closePath();
+
+		ctx.fillStyle = "#fff";
+		ctx.fill();
+
+var createBasicExplosion = function(x, y) {
+
+    //4 particles that scatter
+    for (var angle=0; angle<360; angle+=90) {
+        particlesPool.get (x, y, angle);
+    }
+}
+
+Particle.prototype.oldspawn = function(x,y,angle){
+    this.inUse = true;
+    this.scale = 1;
+    this.x = x;
+    this.y = y;
+    this.angle = angle;
+    this.speed = 50;
+    //velocity is rotated by angle
+    this.velocityX = this.speed * Math.cos(angle * Math.PI / 180);
+    this.velocityY = this.speed * Math.sin(angle * Math.PI / 180);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+</body>

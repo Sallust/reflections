@@ -1,0 +1,60 @@
+?What are you goals from this course?
+	- I hope to learn more about how the page is actually rendered
+	-also, I'm really excited to dig deeper into what asynchronous scripts are
+	-until now, I feel a lot of my design has been oblivious to how overall web page speed is affected
+	-so I hope to be able to code more mindful of page speed rendering impacts
+	-I also hope to be able to increase the Page Speed render insights scores of web pages I make
+
+?What is the Critical Rendering Path?
+	-The sequence of steps the browser goes through to convert the HTML and CSS to actual pixels on the screen
+
+?What is the DOM?
+	-a tree structure that captures the content and properties of the HTML and relationships between the nodes
+	-the full parse representation of the HTML markup
+
+?What is incremental HTML delivery?
+	-like the Google search
+	-header HTML is immediately delivered
+	-search results HTML parsed as results arrive
+
+?How does DOM get made?
+	- HTML response -> Tokens -> Nodes -> DOM Tree
+
+Fact: The browser blocks ALL rendering until ALL CSS is received and processed
+	- Why? Because using partial bits of CSS could lead to incorrect rendering
+	-in the example, p font-weight is changed in a later part of CSS
+
+?Which CSS rule is faster to evaluate? h1 {color:red} or div p {color:red}
+	-h1 because the latter has to traverse more nodes in the DOM tree to execute
+
+Fact: Render-Tree only captures visible content
+	-It also captures content AND styles e.g. text nodes and their styles
+
+Tip: Batch CSS Updates to avoid multiple layout events
+
+Motto: Measure first, then optimize
+
+?Why focus on steps before Render tree construction?
+	-DOM & CSSOM are usually the worst offenders
+
+?How can you use media quieries to avoid render blocking CSS?
+	-my adding the media=(min-width: 650px) that css file does not block rendering
+
+?Ways to optimize JS?
+	-use async tag in script tag
+	-can't use async tag in inline scripts
+	-OR simply use window.onload()
+
+?In the simple example, what optimization strategies should we consider?
+	-inline the CSS, and inline the JS
+	-This reduces the Critical Rendering Path CRP
+	-N.B. It might cause a lot of overhead to have so much inline CSS and JS on similar pages
+	-Also, adding media query to link tags
+	-Adding async tag to JS if appropriate.
+
+?What are the 3 main objectives of optimizing the critical rendering path?
+	-Minimize bytes
+	-Reduce the # of Critical Resources
+	-Shorten the length of the CRP
+
+
