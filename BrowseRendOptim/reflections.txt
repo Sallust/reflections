@@ -1,0 +1,12 @@
+In order to optimize, must understand what goes into each frame
+
+?What are we going to be learning?
+	-experience where bottlenecks
+	-diagnosing and solging common perf issues
+	-hot to approach perf at diff stages of life
+	-discover causes of sticky scrolling and flickering updates & jittering animation
+
+Bad perf kills good sites
+Most req feature on potential news ap is smooth navigation
+?How much time do you have to deliver each frame?
+	-ONLY 10ms!!! (The other 6.7ms are needed for housekeeping)
