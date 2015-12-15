@@ -1,0 +1,4 @@
+?Goals?
+	-learn wtf AJAX is.
+	-hope this is a little less dry and a little more exciting
+	-
