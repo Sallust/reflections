@@ -10,3 +10,91 @@ Bad perf kills good sites
 Most req feature on potential news ap is smooth navigation
 ?How much time do you have to deliver each frame?
 	-ONLY 10ms!!! (The other 6.7ms are needed for housekeeping)
+
+?Why should you also test performance directly on phones?
+	-Issues with CPU, memory, connectivity that would only show up on a phone
+	-given phones have much less of the above
+
+?Good testing strategies to collect clean data?
+	-Quit other apps
+	-go Incognito (so extensions don't skew results)
+	-Causes not symptoms-identify the reasons for issues and focus on them
+	-Measure first then optimize (to see marginal change)
+
+?Where was the jank?
+	-look for scripting that would cause the frames to run long
+	-This example still feels confusing though
+	-The big purple bars indicate too much layout is happening
+	-so identify how layout is being called
+
+?Where was the jank in circle box?
+	-As soon as you open it, it's a lot of green indicated a paint problem
+	-You know it's caused by JS because it green bar only occurs after RequestAnimationFrame is fired
+
+?What is a micro-Optimization?
+	-changing small bits of JS code
+	-you CAN'T do this because there is no way to tell exactly how the JS engine will run the code.
+
+?So how do you optimize JS code?
+	- by using RequestAnimationFrame which fires as early as possible
+
+function animate() {
+	//something rad
+	requestAnimationFrame(animate);
+}
+requestAnimationFrame(animate);
+
+?What does checking the JS profiler box do?
+	- Enhances amount of JavaScript that you see in timeline recording
+	- should really only use JS profiler when you know you have a problem with long running JavaScript
+
+?What is a WebWorker?
+	- essentially, creating a separate JavaScript file which your main ap will spawn into
+
+Quiz:
+	-off-load heavy-lifting into a web-worker
+	-also a massive performance bug in the way the image manipulator runs
+
+?What is garbage?
+	-loose usage of variables can cause a lot of garbage that the JS engine has to deal with
+	-this can cause jank
+
+?What did you learn about gulp?
+	-that it's annoying and hard to use
+	-I also learned how and where to install it
+	-also , i found a gulp for dummies website that really helped
+
+Reflections on JS
+	-I really need to get started on that book.
+	-I feel like I'm not able to completely read code properly
+	-the dreaded callback comes to mind.
+
+?What's BEM & why does it matter?
+	- block Element Modifier
+	- one should try to keep selector matching as simple as possible
+	- it makes it easier for the browser
+
+?What is Forced Synchronous Layout?
+	-When you attempt to access a layout property and then make a style change
+	-how to avoid this? Read layout properties then batch style changes
+
+?Fixing the pizza slider. what did you learn?
+	-Go with instincts. Instinct was that simple % width would solve the problem and it would have!
+	-Also, I did kind of develop a solution in a way I THOUGHT they were looking for
+	-basically, I moved the offsetWidth to outside of the for loop and that made a huge difference
+
+?Post project reflections?
+	-I'm still feeling a little uncertain about the timeline Google dev tool. Might have to revisit
+	-Still, it's incredibly powerful and useful for seeing what's going on when loading a site
+	-honestly, biggest takeaway is being able to use gulp. It's awesome and incredibly useful
+	-I also have better understanding of npm (node package manager)
+	-after submission I wondered if a webworker would have been an acceptable solution
+	-got to see some of how the server handles and operates
+
+?Post project follow-up
+	-need to dig deeper when it comes to fonts. Simply hacking out the link to google fonts prob not the best way to go about it
+	-review more of PSI developer links
+	-review more Google Developer Tools Links
+
+
+
