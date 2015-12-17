@@ -1,4 +1,41 @@
 ?Goals?
 	-learn wtf AJAX is.
 	-hope this is a little less dry and a little more exciting
-	-
+
+?Opening Thoughts?
+	-This course will really and finally help with my understanding of callback functions
+	-AJAX is fundamental for how pages load information now
+	-glad JSON is predominant format for requests
+
+
+?How does a website like Facebook use AJAX?
+	-clicking through friend's pictures
+	-posting messages on timelines
+	-scrolling down newsfeed
+
+?Surprise! We're learning a new tool witin google chrome dev tools!
+	-under Network
+	-Headers Response and Preview
+	-Response shows the HTML response!
+	-preview includes the whole JSON
+	-overall v cool
+
+?Twitter AJAX exercise?
+	-using Dev tools
+	-able to see items_html is the property holding the new HTML for the page
+
+?What do you need to make an AJAX request?
+	-just a url!
+	-in practice POST requests have a URL and some data
+	and GET requests have a url, a callback function and some optional data
+
+?What are some cool APi's you want to use?
+	-Genomics API, Google Maps API, Google Translate API, Wikepedia API
+
+?What's the benefit of using jQuery for AJAX?
+	-it's a pain in the but trying to make AJAX requests work for all browsers
+	- jQuery takes away some of the pain of doing so
+
+?What is Cross Origin Resource Sharing?
+	-an issue that used to protect JS from running from the same source
+	-we can get around it by using Jquery and JSONP Nifty!!
