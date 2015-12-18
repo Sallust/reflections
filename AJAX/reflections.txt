@@ -39,3 +39,18 @@
 ?What is Cross Origin Resource Sharing?
 	-an issue that used to protect JS from running from the same source
 	-we can get around it by using Jquery and JSONP Nifty!!
+
+?How does AJAX change how you can load a custom content page?
+	- Request generic HTML first
+	- then request unique HTML
+	-Start rendering generic 
+	-and finish up by rendering unique html
+	Facebook employs this technique
+
+?What did we learn in this course?
+	-How to make asyncronous requests!
+	-Basically, how you get information for the page after you've already started loading it
+	-This course primarily focused on API's, I'm curirous about how you can use AJAX to populate the rest of a page-
+	-If I had to guess,  I'd say that companies like facebook have a huge API like set up that provides them the information for the rest of the web site
+	-Then the information is populated into the page the same way that I was able to populate images and websites into the project website for the course
+	
