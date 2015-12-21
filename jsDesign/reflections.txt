@@ -1,0 +1,20 @@
+?What are you going to learn in this course?
+	-Seems like a lot
+	-Also seems like we're going to cover some of the gaps that I've had to just push through
+	-I hope to be able to read code a little better and without as much indimidation
+	
+
+?Cat Clicker Ap? How hard & how do you feel about code?
+	-I feel ok about my code. I'm a little embarassed about how long it took me to set up JQuery in the right order and in the right place
+	-
+
+?Cat Clicker 2?
+	-I'm not sure that was the best way to duplicate the code
+	-At least it was easier because I reused the same commands from the first ap
+	-
+
+?What's really happening with in the for loop and alert example?	
+	-The creation of 3 new elements
+	-the creation of an alert to the current value of the variable 
+	-the variable at the end of the loop is 3 so all alerts point to 3
+	
