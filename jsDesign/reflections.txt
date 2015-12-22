@@ -17,4 +17,44 @@
 	-The creation of 3 new elements
 	-the creation of an alert to the current value of the variable 
 	-the variable at the end of the loop is 3 so all alerts point to 3
-	
+
+?How do you feel about your code?
+	-it's a mess
+	-if I had to do it all over again, I'd try to organize it better
+	-It's feeling a little more flexible than the first two answers
+
+?Where are you now regarding your code abilities?
+	-Like a guy with wood and powertools and no plans
+	-I've learned and have the tools to build websites and aps but maybe not the organization just yet
+	-Separating out the project into smaller pieces makes it easier to build
+	-Separation of concerns also allows for easier updates later
+	-For the love of Christ, use google!!!!
+	-There really is absolutely no point for me to try and recreate the wheel
+	-google solutions and find out the best practices 
+	-Why try to build a weird dodocagon when the pattern for building a wheel exisits
+
+What are the goals of organization?
+	-Code is stable & bug-free
+	-cleanly written
+	-scale well
+	-are extensible
+
+?Telephone example?
+	-When everything is connected, you can't move anything around
+	-Connections = Complexity
+
+?What is the Octopus?
+	-The thing that holds things together
+	-but ALSO keeps them separate enough so we can change them without disturbing everything else
+
+?Calendar Quiz-Which of the following would be part of the mode?
+	*The array of calendar events in the application
+	-the buttons for day etc.
+	-The render function for the calendar area (since this determines the view)
+
+?YouTube Playlist Ap- Which of these are in the View?
+	*The input element
+	-The array of URLs to play
+	-The function that adds a URL to the list-(part of the Octopus)
+	*The area where a video plays
+
