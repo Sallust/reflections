@@ -58,3 +58,29 @@ What are the goals of organization?
 	-The function that adds a URL to the list-(part of the Octopus)
 	*The area where a video plays
 
+?Pizza Clicker Ap?
+	-Seriously, I cloned a repo just for a metaphor?
+	-takeaways: separation of view and model concerns 
+
+?Udacity Retain Ap?
+	-How is it organized?
+		-into 3 functions: model, octopus and view
+		-model organizes data
+		-octopus facilitates communication between the two
+		-view takes data given by octopus and renders it
+		-There is no direct communication between method and vie
+
+?If we wanted to reverse order of tags where would that functionality go?
+	-in the Octopus!
+	-Why? 
+		-We don't want to or need to mess with the data that we already have
+		-We can simply change the way the view is getting the data from the mode
+
+?How is Andy displaying the cat when you click each of the buttons? What's wrong with this?
+	-by creating and then showing and hiding them
+	-This isn't great because if we had 1000 cats we'd have 1000 DOM nodes
+
+?Where is the model or data stored in this ap?
+	-It's stored in the DOM
+	-So I actually think it's clever. I'm interested to see exactly why this is a bad practice
+	
