@@ -2,7 +2,7 @@
 	-Seems like a lot
 	-Also seems like we're going to cover some of the gaps that I've had to just push through
 	-I hope to be able to read code a little better and without as much indimidation
-	
+
 
 ?Cat Clicker Ap? How hard & how do you feel about code?
 	-I feel ok about my code. I'm a little embarassed about how long it took me to set up JQuery in the right order and in the right place
@@ -13,9 +13,9 @@
 	-At least it was easier because I reused the same commands from the first ap
 	-
 
-?What's really happening with in the for loop and alert example?	
+?What's really happening with in the for loop and alert example?
 	-The creation of 3 new elements
-	-the creation of an alert to the current value of the variable 
+	-the creation of an alert to the current value of the variable
 	-the variable at the end of the loop is 3 so all alerts point to 3
 
 ?How do you feel about your code?
@@ -30,7 +30,7 @@
 	-Separation of concerns also allows for easier updates later
 	-For the love of Christ, use google!!!!
 	-There really is absolutely no point for me to try and recreate the wheel
-	-google solutions and find out the best practices 
+	-google solutions and find out the best practices
 	-Why try to build a weird dodocagon when the pattern for building a wheel exisits
 
 What are the goals of organization?
@@ -60,7 +60,7 @@ What are the goals of organization?
 
 ?Pizza Clicker Ap?
 	-Seriously, I cloned a repo just for a metaphor?
-	-takeaways: separation of view and model concerns 
+	-takeaways: separation of view and model concerns
 
 ?Udacity Retain Ap?
 	-How is it organized?
@@ -72,7 +72,7 @@ What are the goals of organization?
 
 ?If we wanted to reverse order of tags where would that functionality go?
 	-in the Octopus!
-	-Why? 
+	-Why?
 		-We don't want to or need to mess with the data that we already have
 		-We can simply change the way the view is getting the data from the mode
 
@@ -83,4 +83,13 @@ What are the goals of organization?
 ?Where is the model or data stored in this ap?
 	-It's stored in the DOM
 	-So I actually think it's clever. I'm interested to see exactly why this is a bad practice
-	
+
+?Cat Clicker Premium Solution-Reflections?
+	-solution addressed some issues I came into cleverly
+	-e.g. in view object, I wanted to set Dom variables only once
+	-answer acheived this by setting variable to this.variable (duh!)
+	-other big takeaway: when to store a property in the object itself
+	-i.e. setting an imgDisplay property to false was a little awkward
+	-better solution was to simply create a model.displayedCat that would change.
+
+
