@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Cat Clicker Premium</title>
+	<title>Cat Clicker Premium Pro</title>
 	<link rel="stylesheet" href="main.css">
 
 
@@ -24,10 +24,19 @@
 		<h2>I've been clicked <span id="clicked"> 0 </span> times </h2>
 		-->
 	</div>
-<!--<h2>I've been clicked <span id="clicked"> 0 </span> times </h2> -->
-	<div class="closure">
-		Hello
+	<div id="admin-div">
+		<button id="admin">Admin</button>
+
+		<form id="cat-form" class="form-container" style="display: none">
+        <label for="name">Name: </label><input type="text" id="name" value="">
+        <label for="url">ImgUrl: </label><input type="text" id="url" value="">
+        <label for="clicks"># Clicks: </label><input type="text" id="clicks" value="">
+        <button id="cancel" type="button">Canel</button>
+        <button id="submit" type="button">Save</button>
+    </form>
+
 	</div>
+<!--<h2>I've been clicked <span id="clicked"> 0 </span> times </h2> -->
 
 
 
