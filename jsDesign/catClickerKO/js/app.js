@@ -49,7 +49,7 @@ var Cat = function(data) {
 		return this.catLevelArray[Math.floor(this.clickCount()/10)];
 	},this)
 
-	this.nicknames = ko.observable()
+	this.nicknames = ko.observable(data.nicknames);
 }
 
 var ViewModel = function() {
@@ -61,10 +61,14 @@ var ViewModel = function() {
 		self.catList.push( new Cat(catItem) );
 	});
 
-	this.currentCat = ko.observable( this.catList()[0] );
+	self.currentCat = ko.observable( self.catList()[1] );
 
 	this.incrementCounter = function() {
 		this.clickCount(this.clickCount() + 1);
+	};
+	self.setCurrentCat = function() {
+		//console.log(self.currentCat())
+		self.currentCat ( this );
 	};
 }
 
