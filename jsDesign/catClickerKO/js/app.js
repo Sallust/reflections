@@ -10,6 +10,8 @@ var ViewModel = function() {
 		return this.catLevelArray[Math.floor(this.clickCount()/10)];
 	},this)
 
+	this.nicknames = ko.observable(["The Cutest!!", "Almost as Cute", "As cute as Unicorn Smiles", "The Cat"])
+
 	this.incrementCounter = function() {
 		this.clickCount(this.clickCount() + 1);
 	};

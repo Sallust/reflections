@@ -115,5 +115,7 @@ What are the goals of organization?
 	-in the cat example, you'd use it for Full name (based on first and last name)
 	-and you'd used it for a Cat Title based on the number of clicks.
 
+?What's Control Flow and why does it sound so scary?
+	-it's just anything that's non-linear so like a for loop
 
 
