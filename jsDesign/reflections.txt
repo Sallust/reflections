@@ -118,4 +118,9 @@ What are the goals of organization?
 ?What's Control Flow and why does it sound so scary?
 	-it's just anything that's non-linear so like a for loop
 
+?Using with is trick, right?!?
+	-I get that using with we no longer have to call this.currentCat().clickCount, but it's a little shakey conceptually for me
+	-whew, then he explains it in the next lesson, lol
+	-you can still use var self = this, if you really want to call the parent property and not the call-time this
+
 

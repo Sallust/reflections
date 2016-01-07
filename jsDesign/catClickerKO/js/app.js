@@ -1,4 +1,4 @@
-var ViewModel = function() {
+var Cat = function() {
 	this.clickCount = ko.observable(0);
 	this.name = ko.observable('Tabby');
 	this.imgSrc = ko.observable('img/tabby.jpg');
@@ -11,6 +11,10 @@ var ViewModel = function() {
 	},this)
 
 	this.nicknames = ko.observable(["The Cutest!!", "Almost as Cute", "As cute as Unicorn Smiles", "The Cat"])
+}
+
+var ViewModel = function() {
+	this.currentCat = ko.observable( new Cat() );
 
 	this.incrementCounter = function() {
 		this.clickCount(this.clickCount() + 1);
