@@ -1,3 +1,42 @@
+var initialCats = [
+	{
+		clickCount: 0,
+		name: 'Tabby',
+		imgSrc: 'img/tabby.jpg',
+		imgAttribution: 'http://www.flickr.com',
+		nicknames: ["The Cutest!!", "Almost as Cute", "As cute as Unicorn Smiles", "The Cat"]
+	},
+	{
+		clickCount: 0,
+		name: 'Sleepy',
+		imgSrc: 'img/sleepy.jpg',
+		imgAttribution: 'http://www.flickr.com',
+		nicknames: ["Super the sleepiest!!!", "Almost as Cute", "As cute as Unicorn Smiles", "The Cat"]
+	},
+	{
+		clickCount: 0,
+		name: 'Lioness',
+		imgSrc: 'img/rawr.jpg',
+		imgAttribution: 'http://www.flickr.com',
+		nicknames: ["King of Kute", "Cub with the Cute", "As cute as Unicorn Smiles", "The Cat"]
+	},
+	{
+		clickCount: 0,
+		name: 'Sarah Rebecca Elizabeth Windsor',
+		imgSrc: 'img/lawncat.jpg',
+		imgAttribution: 'http://www.flickr.com',
+		nicknames: ["Her Royal Meowjesty", "Princess of Purrdom", "As cute as Unicorn Smiles", "The Cat"]
+	},
+	{
+		clickCount: 0,
+		name: 'The Donald',
+		imgSrc: 'img/fatcat.jpg',
+		imgAttribution: 'http://www.flickr.com',
+		nicknames: ["Present!", "R U Still here?", "Hair for days", "The Cat"]
+	}
+]
+
+
 var Cat = function(data) {
 	this.clickCount = ko.observable(data.clickCount);
 	this.name = ko.observable(data.name);
@@ -14,13 +53,15 @@ var Cat = function(data) {
 }
 
 var ViewModel = function() {
-	this.currentCat = ko.observable( new Cat( {
-		clickCount: 0,
-		name: 'Tabby',
-		imgSrc: 'img/tabby.jpg',
-		imgAttribution: 'http://www.flickr.com',
-		nicknames: ["The Cutest!!", "Almost as Cute", "As cute as Unicorn Smiles", "The Cat"]
-	}) );
+	var self = this;
+
+	this.catList = ko.observableArray([]);
+
+	initialCats.forEach(function(catItem){
+		self.catList.push( new Cat(catItem) );
+	});
+
+	this.currentCat = ko.observable( this.catList()[0] );
 
 	this.incrementCounter = function() {
 		this.clickCount(this.clickCount() + 1);
