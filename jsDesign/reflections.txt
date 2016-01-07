@@ -87,9 +87,33 @@ What are the goals of organization?
 ?Cat Clicker Premium Solution-Reflections?
 	-solution addressed some issues I came into cleverly
 	-e.g. in view object, I wanted to set Dom variables only once
-	-answer acheived this by setting variable to this.variable (duh!)
+	-answer achieved this by setting variable to this.variable (duh!)
 	-other big takeaway: when to store a property in the object itself
 	-i.e. setting an imgDisplay property to false was a little awkward
 	-better solution was to simply create a model.displayedCat that would change.
+?What did you learn through attendance click ap and refactoring own resume project?
+	-I still feel like I'm missing a small part of the logic here.
+	-Was starting to get the hang of things when refactoring the resume project code
+	-Also, feel like my code for the resume is a hot mess that I will actually need to clean up even further :-(
+?Isn't it lazy to just use other people's libraries?
+	-No, there is no need to rebuild what has already been built
+	-Use the pieces that already exist and are well tested to build an even better project
+
+?What is knockout?
+	-an organizational framework
+	-big
+
+?Documentation & Looking stuff up?
+	-don't be afraid to look things up
+	-it's the programming decisions that you make that determine your success as a developer NOT your ability to randomly recall functions quickly
+
+?How are jQuery and knockout similar?
+	-observables and observablAArrays are simply functions with special keys and methods on them
+
+?When would you use a computed observable?
+	-First, a computed observable is a variable created from other variables e.g. full name
+	-in the cat example, you'd use it for Full name (based on first and last name)
+	-and you'd used it for a Cat Title based on the number of clicks.
+
 
 
