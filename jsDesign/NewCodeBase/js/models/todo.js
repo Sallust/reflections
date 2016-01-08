@@ -20,6 +20,7 @@ var app = app || {};
 		toggle: function () {
 			this.save({
 				completed: !this.get('completed')
+				//title: this.get('title') + "--done"
 			});
 		}
 	});
