@@ -132,4 +132,22 @@ What are the goals of organization?
 	-quick high level understanding is all you need before diving in
 	-trying to completely understand an entire code-base is both impractical and foolish
 
+?Solution to adding done?
+	-I found where the completed property in the model was being changed and I changed the model to also add "done " to the title
+	-it was cool to see that relatively quickly, I figured "create" and "get" were not native functions
+	-used get command to get current title and change it
+	-HIS solution was magically using a ternary operator in the html, which was cool
+	-I don't think this would have every have occurred to me though
 
+--Experimentation is Cheap!!
+
+--Be the tofu!!
+
+?How to add new functionality for Priority button?
+	-Was for once able to implement this pretty easily
+	-I do feel it was artificially easy because it completely mirrored toggle of completed
+	-Nonetheless, it's nice I was able to do it without the solution video (what losers did that... scoff)
+
+--Be a detective--
+
+--Ther
