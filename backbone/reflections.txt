@@ -1,0 +1,42 @@
+?How did you feel about the Getting Started-backbone intro?
+	-Seems ok
+	-It strikes me as a little minimalist, but in their eyes, that's a good thing
+	-some of the language I don't quite get yet, but that's not a huge deal "atomic bla bla bla"'
+	-I'm glad that we got to work with knockout first to see how another type of library handles the MVMM model
+	-I'm excited to get started since the backbone.js example in the JSdesign course was the easiest for me to jump into
+
+?What did you learn from making your first Backbone App?
+	-There are all sorts of crazy methods going on
+	-you need to call get to get a value
+	-call set to set it
+	-$el is a reference to the dom elements of the view
+	-there are lots of different separate pieces
+	-This use of Model seems more in line with what Eric was mentioning
+
+	-Service Model--> Kind of like a constructor function
+		-contains data and also a nice helper function to toggle checked
+	-ServiceList Collection--> like an observable array
+		-model property declares what it's a collection of?
+		-function getChecked returns array of checked services
+		-uses 'where'
+
+	-Then create a new Collection of new Services
+
+	-ServiceView View --> The ViewModel
+		declare tagname?
+		events: on this do this
+		initialize: sets up listening by this.listenTo
+		listenTo (this.model, change, this.render)
+
+		render: sets html using $el
+	-App View --> Like the Mother of the Views
+		-first set "el", which is where it lives
+		-initialize selectors
+		-sets up Listening (what's being listening to, for what, what to do)
+		-initialize each subViewModel using passing {model:service} as param
+		-add render of each service
+
+		-its Render calculates total and dynamically changes it in DOM
+
+
+
