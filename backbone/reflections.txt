@@ -37,6 +37,48 @@
 		-add render of each service
 
 		-its Render calculates total and dynamically changes it in DOM
+?What are the differences so far?
+	-way The wrapper is executed
+	-use of bind All
 
+?What's happening in first Hello World example?
+	-new listView instantiates a instance of ListView a View
+	-on instantiation it runs initialize which calls render
+	-render uses the el property of the listview where the view is attached to the DOM
 
+?What's happening in the 2nd click add item example?
+	-we've introduced an event handler using the 'events property'
+	-on 'click (of) button#add' run addItem
+	-addItem simply adds some html
 
+?What's happening in 3rd ex?
+	-First of all, it's very unfulfilling for more work to result in the same product, lol!
+	-Creating a model, Item with defaults 'hello' and 'world'
+	-a collection which will hold Items
+	-Still not getting the bind all and this completely
+	-instantiate the collection in init
+	-bind the collection to appendItem, Append gets notified when collection, add method is used
+	-define appendItem which adds the html
+?In the 4th ex?
+	-creating a special ItemView view
+	-called by append Item, rendering of item falls to this items render method
+?In the 5th?
+	-First, I have no idea what Backbone.sync is doing :-/
+	-Completely within ItemView, adding 2 new click events
+	-bound to its own new functions, swap & remove
+	-2 bindings: click --> swap or remove
+	-AND change/remove --> render or unrender
+?Backbone book Working with Model?
+	-reinforcing what we already know, using set and get method
+	-also introduces the to JSON method
+	-also intros validate and on change
+
+?What the el?
+	-either set tagName, id and className for a completely new el
+	-or set el: "#footer" to find what element you want it to be
+	-all $el is a a jquery obj of the el
+	all $('.edit') is finding edit within the view and makining it a jquery obj
+
+? on vs listenTo?
+	-1st listens directly to event
+	-listen to listens to events on something else, like subsribing

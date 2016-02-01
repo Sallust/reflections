@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Baby's 3rd Backbond App</title>
+</head>
+<body>
+	<div id="todo">
+	</div>
+	<script type="text/template" id="item-template">
+		<div>
+			<input id="todo_complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %>>
+			<%= title %>
+		</div>
+
+	</script>
+	<h1>Hello Backbone!</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
