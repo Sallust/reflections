@@ -82,3 +82,25 @@
 ? on vs listenTo?
 	-1st listens directly to event
 	-listen to listens to events on something else, like subsribing
+
+?Making the todo... again?
+	-what's save versus set again?
+	so far it's simple...
+
+?How's the todo app going?
+	-a little confused by the checkboxall, but otherwise, it's going well
+
+-Interestingly, this.model is how we can refer to the model that is passed to the view
+
+?How'd the todoApp go?
+	-it was a lot
+	-there was a lot of simultaneous jquery and underscore and backbone
+	-I'd like to think i was able to follow along, but there was a lot going on
+	-it was really helpful to see what should be simple things like accessing variables using window.app
+	-overall really helpful and insightful. I just hope it all sticks in my brain place.
+
+?Firebase?
+	-Well first of all, it's nice to see a quick easy reinforcement of Backbone
+	-Secondly, it's really cool
+	-i kinda wish I had it for the last project
+	-the way it saves data is amazing. I look forward to playing around with it movre
